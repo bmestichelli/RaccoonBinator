@@ -1,3 +1,3 @@
 # RaccoonBinator
 
-![Logo](figures/logo_raccoonbinator.png)
+![Logo](plots/logo_raccoonbinator.png)
