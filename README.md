@@ -1,3 +1,16 @@
+<table>
+<tr>
+<td>
+
 # RaccoonBinator
 
-![Logo](plots/logo_raccoonbinator.png)
+Some description here.
+
+</td>
+
+<td>
+<img src="plots/logo_raccoonbinator.png" width="120">
+</td>
+
+</tr>
+</table>
