@@ -410,7 +410,7 @@ class binaries:
         return appo
 
 
-    def secondaries(self, triple_syst=par.multiples, m_thres=sp.m_thres_low):
+    def secondaries(self, triple_syst=sp.multiples, m_thres=sp.m_thres_low):
  
         stars = np.stack((self.id,self.m1), axis=-1)
         stars = stars[np.argsort(stars[:,1])]
