@@ -17,10 +17,10 @@ The prescriptions in the code were first introduced in [Torniamenti et al. 2021]
 
 ## Layout
 
-# recomBinaries.py
+### recomBinaries.py
 Main calling the other files. RaccoonBinator is executed via `\python recomBinaries.py`. It produces the final plot (if plotta=True) and produces the output file and logfile. 
 
-## star_params.py
+### star_params.py
 Contains the basic initial conditions to run the code.
 
 ### parameters.py
