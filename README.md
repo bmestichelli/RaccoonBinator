@@ -18,4 +18,8 @@ The prescriptions in the code were first introduced in [Torniamenti et al. 2021]
 ## Layout
 
 ### parameters.py
+Contains constants and parameters. For example:
+- multiples : whether triple systems are taken into account
+- input_dat and input_file_name : input and data files from Mcluster
+- **binaries_yn / change_imf ??** 
 
