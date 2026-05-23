@@ -22,10 +22,10 @@ Main calling the other files. RaccoonBinator is executed via `\python recomBinar
 
 ### star_params.py
 Contains the basic initial conditions to run the code.
+- multiples : whether triple systems are taken into account (moved here!)
 
 ### parameters.py
 Contains constants and parameters. For example:
-- multiples : whether triple systems are taken into account
 - input_dat and input_file_name : input and data files from Mcluster
 - **binaries_yn / change_imf ??** 
 
