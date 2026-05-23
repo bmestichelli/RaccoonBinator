@@ -4,7 +4,7 @@ binaries_yn = True
 multiples = True #Add "fake" triplets to correct the binary fraction
 
 plotta = True #plot stellar and binary distributions
-par_bin_file=True
+par_bin_file=True #print file with new orbital parameters ("binaries_new.dat")
 
 change_imf = False
 verbose = True
