@@ -1,10 +1,12 @@
 from parameters import *
 import numpy as np
 import scipy.stats as stats
+
 ###############################
 #     Stellar parameters      #
 ###############################
 
+multiples = True #Add "fake" triplets to correct the binary fraction
 metal = 0.02 #necessary for stellar radius only (not valid for Pop. III stars) 
 bin_params = 's12' #orbital parameters of massive stars 
 imf_type = 'kroupa'
