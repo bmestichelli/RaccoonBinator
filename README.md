@@ -29,6 +29,6 @@ Contains constants and parameters. For example:
 - input_dat and input_file_name : input and data files from Mcluster
 - **binaries_yn / change_imf ??** 
 
-## general_functions.py
+### general_functions.py
 Contains functions to load data as well as mathematical tools to e.g. solve equations
 
