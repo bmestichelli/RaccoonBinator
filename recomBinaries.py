@@ -447,5 +447,5 @@ if par.plotta == True:
     axv[2][2].tick_params(length=6, labelsize=16)
 
     plt.tight_layout()
-    plt.savefig(f'new_binary_distributions_IMF{sp.imf_type}_{sp.bin_params}_medium{sp.medium_interpolate}_triples{par.multiples}.pdf')
+    plt.savefig(f'new_binary_distributions_IMF{sp.imf_type}_{sp.bin_params}_medium{sp.medium_interpolate}_triples{sp.multiples}.pdf')
     plt.close()
