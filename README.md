@@ -17,9 +17,18 @@ The prescriptions in the code were first introduced in [Torniamenti et al. 2021]
 
 ## Layout
 
+# recomBinaries.py
+Main calling the other files. RaccoonBinator is executed via `\python recomBinaries.py`. It produces the final plot (if plotta=True) and produces the output file and logfile. 
+
+## star_params.py
+Contains the basic initial conditions to run the code.
+
 ### parameters.py
 Contains constants and parameters. For example:
 - multiples : whether triple systems are taken into account
 - input_dat and input_file_name : input and data files from Mcluster
 - **binaries_yn / change_imf ??** 
+
+## general_functions.py
+Contains functions to load data as well as mathematical tools to e.g. solve equations
 
