@@ -23,8 +23,9 @@ Main calling the other files. RaccoonBinator is executed via `python recomBinari
 ### star_params.py
 Contains the basic initial conditions to run the code. In this file you can specify the IMF (and mass range extension), as well as the orbital parameter distributions for different mass ranges.
 
-- `metal` (metallicity) can be used only for Pop. II-I stars for the computation of stellar radii. This parameter is of no consequence for Pop. III stars, as long as the e-P relation is computed with Eq. 3 from [Moe & Di Stefano 2017](https://iopscience.iop.org/article/10.3847/1538-4365/aa6fb6/meta). 
-- IMF types can be: 
+- `metal` (metallicity) can be used only for Pop. II-I stars for the computation of stellar radii. This parameter is of no consequence for Pop. III stars, as long as the e-P relation (classes.py) is computed with Eq. 3 from [Moe & Di Stefano 2017](https://iopscience.iop.org/article/10.3847/1538-4365/aa6fb6/meta).
+- `bin_params` regulates the choice of orbital parameter distributions for massive stars (see `medium_interpolate`) can be `'s12'`for orbital parameters from [Sana et al. 2012](https://www.science.org/doi/10.1126/science.1223344) (local OB stars), and `'sb13'`for parameters from [Stacy & Bromm 2013](https://academic.oup.com/mnras/article/433/2/1094/1747569) (simulations of Pop. III stars).
+- IMF types can be: `'kroupa'` [Kroupa et al. 2001](https://academic.oup.com/mnras/article/322/2/231/962260?login=true); `'log-flat'` 
 - multiples : whether triple systems are taken into account (moved here!)
 
 ### parameters.py
