@@ -282,7 +282,7 @@ class cluster:
 
 
     def stellar_radii(self, Z, verbose=par.verbose):
-        self.R = star_radius(self.m, Z)
+        self.R = sp.star_radius(self.m, Z)
 
 
     def binary_fraction(self, verbose=par.verbose):
@@ -397,8 +397,8 @@ class binaries:
         #self.smax = pow(G*(self.m1+self.m2)*(self.P*24.*60.*60.)**2. / (2.*np.pi*pcinkm)**2., 1./3.) #semi-major axis in pc
 
     def radii(self, Z=sp.metal, verbose=par.verbose):
-        self.R1 = star_radius(self.m1, Z)
-        self.R2 = star_radius(self.m2, Z)
+        self.R1 = sp.star_radius(self.m1, Z)
+        self.R2 = sp.star_radius(self.m2, Z)
 
 
 
@@ -729,7 +729,7 @@ class binaries:
                 good_Ps = appo_P[appo_P >= P_min(e)]
 
             elif(selection=="coll"):
-                Rtot = star_radius(m1, Z) + star_radius(m2, Z) # Sum of radii
+                Rtot = sp.star_radius(m1, Z) + sp.star_radius(m2, Z) # Sum of radii
                 dmin_to_Rtot = 1.2 # Ratio of min acceptable value of pericenter distance to Rtot
                 a_min = Rtot * dmin_to_Rtot / (1-e)
                 good_Ps = appo_P[appo_P >= P_min(a_min, m1, m2)]
