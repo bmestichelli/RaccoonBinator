@@ -17,9 +17,6 @@ The prescriptions in the code were first introduced in [Torniamenti et al. 2021]
 
 ## Layout
 
-### recomBinaries.py
-Main calling the other files. RaccoonBinator is executed via `python recomBinaries.py`. It produces the final plot (if plotta=True) and produces the output file and logfile. 
-
 ### star_params.py
 Contains the basic initial conditions to run the code. In this file you can specify the IMF (and mass range extension), as well as the orbital parameter distributions for different mass ranges.
 
@@ -34,7 +31,6 @@ Contains the basic initial conditions to run the code. In this file you can spec
 - `mbin` and `merr` contain the mass bin centers and length
 - The functions `binary_function` and `binary_function_no_multiples` give back the binary fractions (with or without triples) for each primary mass value.
 
-
 ### parameters.py
 Contains constants and parameters. For example:
 - input_dat and input_file_name : input and data files from Mcluster
@@ -42,4 +38,10 @@ Contains constants and parameters. For example:
 
 ### general_functions.py
 Contains functions to load data as well as mathematical tools to e.g. solve equations
+
+### classes.py
+
+### recomBinaries.py
+Main calling the other files. RaccoonBinator is executed via `python recomBinaries.py`. It produces the final plot (if plotta=True) and produces the output file and logfile. 
+
 
