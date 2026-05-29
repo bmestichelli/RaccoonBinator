@@ -51,8 +51,9 @@ Main calling the other files. RaccoonBinator is executed via `python recomBinari
 ## Test
 In the folder BLABLA you can find an example of usage of the code:
 
-- test.dat.10`, `test.info` and `test.input` are the output file from MCLUSTER;
-- `dat.10` is the output file of `recomBinaries.py` and it can be used as input file to N-body codes (PeTar, NBODY6++);
+- `test.dat.10`, `test.info` and `test.input` are the output file from MCLUSTER;
+- `loop.sh` is the bash file used to generate the initial conditions with MCLUSTER and to then recombine them;
+- `dat.10` and `input` are the output files of `recomBinaries.py` that can be used as input files to N-body codes (PeTar, NBODY6++);
 - `logbin` is the logfile;
 - `binaries_new.dat` is a file with info on the generated binaries, i.e. primary masses, positions, velocities, periods, eccentricities, and maxima semi-major axes;
 - `new_binary_distributions_IMF{}_medium{}_triples{}.pdf` are plots showing the distributions of mass, orbital parameters and binary fractions for the chosen initial configuration.
