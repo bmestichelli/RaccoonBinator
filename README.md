@@ -49,7 +49,7 @@ This file contains functions to compute the properties of stars and binaries, as
 Main calling the other files. RaccoonBinator is executed via `python recomBinaries.py`. It produces the final plot (if plotta=True) and produces the output file and logfile. 
 
 ## Test
-In the folder BLABLA you can find an example of usage of the code:
+In the folder `test` you can find an example of usage of the code:
 
 - `test.dat.10`, `test.info` and `test.input` are the output file from MCLUSTER;
 - `loop.sh` is the bash file used to generate the initial conditions with MCLUSTER and to then recombine them;
