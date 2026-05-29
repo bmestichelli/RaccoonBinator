@@ -48,4 +48,13 @@ This file contains functions to compute the properties of stars and binaries, as
 ### recomBinaries.py
 Main calling the other files. RaccoonBinator is executed via `python recomBinaries.py`. It produces the final plot (if plotta=True) and produces the output file and logfile. 
 
+## Test
+In the folder BLABLA you can find an example of usage of the code:
+
+- test.dat.10`, `test.info` and `test.input` are the output file from MCLUSTER;
+- `dat.10` is the output file of `recomBinaries.py` and it can be used as input file to N-body codes (PeTar, NBODY6++);
+- `logbin` is the logfile;
+- `binaries_new.dat` is a file with info on the generated binaries, i.e. primary masses, positions, velocities, periods, eccentricities, and maxima semi-major axes;
+- `new_binary_distributions_IMF{}_medium{}_triples{}.pdf`
+
 
