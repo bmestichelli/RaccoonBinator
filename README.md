@@ -55,6 +55,6 @@ In the folder BLABLA you can find an example of usage of the code:
 - `dat.10` is the output file of `recomBinaries.py` and it can be used as input file to N-body codes (PeTar, NBODY6++);
 - `logbin` is the logfile;
 - `binaries_new.dat` is a file with info on the generated binaries, i.e. primary masses, positions, velocities, periods, eccentricities, and maxima semi-major axes;
-- `new_binary_distributions_IMF{}_medium{}_triples{}.pdf`
+- `new_binary_distributions_IMF{}_medium{}_triples{}.pdf` are plots showing the distributions of mass, orbital parameters and binary fractions for the chosen initial configuration.
 
 
