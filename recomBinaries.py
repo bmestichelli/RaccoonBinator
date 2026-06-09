@@ -296,35 +296,16 @@ fin = open(simnamepar, "rt")
 fout = open(parameter_file, "wt")
 neighbour_number = int(2*pow(len(stars.m),0.5))
 
-if(par.binaries_yn==True):
-    mean_new = round(np.mean(np.concatenate((stars.binaries.m1,stars.binaries.m2[stars.binaries.m2>0]))),16)
-else:
-    mean_new = round(np.mean(np.concatenate(stars.m)),16)
-    
-if(par.binaries_yn==True):
-    for line in fin:
-        line = line.replace(str(Nstars_old), str(len(stars.m))).replace("50 1 10",str(neighbour_number)+ " 1 1").replace(str(metal_star_old),str(sp.metal)).replace("1.00000000 8.00000000 1000000.0000 1.0E-02","0.10000000 0.80000000 1000000.0000 1.0E-02").replace(str(mean_old), str(mean_new)).replace("0 1 0 1 2 0 0 0 3 6","0 1 0 1 2 0 0 0 0 6").replace(" 6 ", " 10 ").replace("1.0E-3 1.0E-2 ", "1.0E-7 1.0E-4 ").replace("-6","0")
-        tokens = line.split()
-        if len(tokens) == 8 and tokens[0].startswith("2.35"):  # uniquely identify the target line
-            tokens[3] = str(int(stars.binaries.Nbin))     # update Nbinaries safely
-            line = ' '.join(tokens)
-        fout.write(line + '\n')
-else:
-    for line in fin:
-        line = line.replace(str(Nstars_old), str(len(stars.m)))\
-                   .replace("50 1 10",str(neighbour_number)+ " 1 1")\
-                   .replace(str(metal_star_old),str(sp.metal))\
-                   .replace("1.00000000 8.00000000 1000000.0000 1.0E-02","0.10000000 0.80000000 1000000.0000 1.0E-02")\
-                   .replace(str(mean_old), str(mean_new))\
-                   .replace("0 1 0 1 2 0 0 0 3 6","0 1 0 1 2 0 0 0 0 6")\
-                   .replace(" 6 ", " 10 ")\
-                   .replace("1.0E-3 1.0E-2 ", "1.0E-7 1.0E-4 ")\
-                   .replace("-6","0")
-        tokens = line.split()
-        if len(tokens) == 8 and tokens[0].startswith("2.35"):  # uniquely identify the target line
-            tokens[3] = str(int(0))     # update Nbinaries safely
-            line = ' '.join(tokens)
-        fout.write(line + '\n')
+
+mean_new = round(np.mean(np.concatenate((stars.binaries.m1,stars.binaries.m2[stars.binaries.m2>0]))),16)
+
+for line in fin:
+    line = line.replace(str(Nstars_old), str(len(stars.m))).replace("50 1 10",str(neighbour_number)+ " 1 1").replace(str(metal_star_old),str(sp.metal)).replace("1.00000000 8.00000000 1000000.0000 1.0E-02","0.10000000 0.80000000 1000000.0000 1.0E-02").replace(str(mean_old), str(mean_new)).replace("0 1 0 1 2 0 0 0 3 6","0 1 0 1 2 0 0 0 0 6").replace(" 6 ", " 10 ").replace("1.0E-3 1.0E-2 ", "1.0E-7 1.0E-4 ").replace("-6","0")
+    tokens = line.split()
+    if len(tokens) == 8 and tokens[0].startswith("2.35"):  # uniquely identify the target line
+        tokens[3] = str(int(stars.binaries.Nbin))     # update Nbinaries safely
+        line = ' '.join(tokens)
+    fout.write(line + '\n')
 
 fin.close()
 fout.close()
