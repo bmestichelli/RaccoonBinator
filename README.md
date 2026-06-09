@@ -37,7 +37,7 @@ Contains the basic initial conditions to run the code. In this file you can spec
 ### parameters.py
 Contains constants and parameters. For example:
 - input_dat and input_file_name : input and data files from Mcluster
-- **binaries_yn / change_imf ??** 
+- `change_imf` if `True` allows to change the IMF of primaries via the function `generate_imf` (classes.py)
 
 ### general_functions.py
 Contains functions to load data as well as mathematical tools to e.g. solve equations
