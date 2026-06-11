@@ -53,7 +53,7 @@ In the folder `test` you can find an example of usage of the code:
 
 - `test.dat.10`, `test.info` and `test.input` are the output files from MCLUSTER needed to run `recomBinaries.py`; 
 - `loop.sh` is the bash file used to generate the initial conditions with MCLUSTER and to then recombine them;
-- `dat.10` and `input` are the output files of `recomBinaries.py` that can be used as input files to N-body codes (PeTar, NBODY6++);
+- `dat.10` and `input` are the output files of `recomBinaries.py` that can be used as input files to N-body codes (PeTar, NBODY6++). The file `dat.10` contains seven columns (mass [Msun], x [pc], y [pc], z [pc], vx [km/s], vy [km/s], vz [km/s]);
 - `logbin` is the logfile;
 - `binaries_new.dat` is a file with info on the generated binaries, i.e. primary masses, positions, velocities, periods, eccentricities, and maxima semi-major axes;
 - `new_binary_distributions_IMF{}_medium{}_triples{}.pdf` are plots showing the distributions of mass, orbital parameters and binary fractions for the chosen initial configuration.
