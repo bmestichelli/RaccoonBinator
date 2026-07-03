@@ -31,16 +31,16 @@ Contains the basic initial conditions to run the code. In this file you can spec
 - `mmin` and `mMax` are the minimum and maximum stellar mass.
 - `lognorm` is True only in case `imf_type = 'log-flat'` and allows the computation of the normalization of the log-flat IMF.
 - `bin_fract0` is the binary fraction corresponding to systems with primary mass $<0.8\\,\rm M_{\odot}$, while `fbinv` reports the total multiplicity fractions from [Moe & Di Stefano 2017](https://iopscience.iop.org/article/10.3847/1538-4365/aa6fb6/meta) in different bins of primary mass, `fbinvb` reports the binary fractions and `fbinvt` reports the fractions of multiples only.
-- `mbin` and `merr` contain the mass bin centers and length
+- `mbin` and `merr` contain the mass bin centers and length.
 - The functions `binary_function` and `binary_function_no_multiples` give back the binary fractions (with or without triples) for each primary mass value.
 
 ### parameters.py
 Contains constants and parameters. For example:
-- input_dat and input_file_name : input and data files from Mcluster
-- `change_imf` if `True` allows to change the IMF of primaries via the function `generate_imf` (classes.py)
+- `input_dat` and `input_file_name` : input and data files from MCLUSTER.
+- `change_imf` : if `True` allows to change the IMF of primaries via the function `generate_imf` (classes.py).
 
 ### general_functions.py
-Contains functions to load data as well as mathematical tools to e.g. solve equations
+Contains functions to load data as well as mathematical tools (e.g., to solve equations).
 
 ### classes.py
 This file contains functions to compute the properties of stars and binaries, as well as the properties of the host cluster. The main functions needed to recombine the properties of the input binaries are found here.
